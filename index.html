@@ -1,16 +1,45 @@
-<!doctype html>
 <html lang="zh">
-  <head>
-    <meta charset="utf-8">
-    <title>🌸櫻之城🌸遊戲實況伺服器</title>
-  </head>
-  <body>
-    <div style="display: flex;background-color: white;color: dimgray;">
-        <div style="width:16vmax;margin-top:auto;margin-left: auto;margin-bottom:auto;margin-right: 0;">
-            <img src="logo.jpg"/>
-        </div>
-        <span style="font-size:3.1vmax;margin-top:auto;margin-left: 0;margin-bottom:auto;margin-right: auto;">
-            🌸櫻之城🌸遊戲實況伺服器
-        </span>
-    </div>
+
+<head>
+  <meta charset="utf-8">
+  <link href="icon.png" rel="icon" type="image/png">
+  <link href="stylesheets/animations.css" rel="stylesheet">
+  <title>🌸櫻之城🌸遊戲實況伺服器</title>
+</head>
+
+<body style="font-family: sans-serif;background-color: white;">
+  <style>
+    .logo_container {
+      display: flex;
+      height: 16vw;
+      max-height: 256;
+      border-bottom: 1px solid black;
+      flex-wrap: nowrap;
+      max-lines: 1;
+    }
+
+    .logo_image {
+      width: 16vw;
+      max-width: 256;
+      margin: auto 0 auto auto;
+      animation: fadeIn 1s;
+    }
+
+    .logo_text {
+      color: dimgray;
+      font-size: 4vw;
+      margin: auto auto auto 0;
+      animation: fadeIn 1s 350ms backwards;
+      text-overflow: clip;
+      white-space: nowrap;
+    }
+  </style>
+  <div class="logo_container">
+    <img src="logo.jpg" class="logo_image">
+    <span class="logo_text">
+      🌸櫻之城🌸遊戲實況伺服器
+    </span>
+  </div>
+</body>
+
 </html>
