@@ -6,6 +6,13 @@
   <link href="resources/icon.jpg" rel="icon" type="image/jpeg" sizes="64x64" />
   <link href="stylesheets/animations.css" rel="stylesheet" />
   <title>🌸櫻之城🌸遊戲實況伺服器</title>
+  <script>
+    function startAnimation() {
+      document.querySelector('.logo_image').style.animationPlayState = 'running';
+      document.querySelector('.logo_text').style.animationPlayState = 'running';
+    }
+    window.addEventListener('load', startAnimation);
+  </script>
   <style title="builtin styles">
     body {
       display: flex;
@@ -47,6 +54,7 @@
       max-width: 256px;
       margin: auto 0 auto auto;
       animation: fadeIn 1s;
+      animation-play-state: paused;
     }
 
     .logo_text {
@@ -58,6 +66,7 @@
       animation: fadeIn 1s 350ms backwards;
       text-overflow: clip;
       white-space: nowrap;
+      animation-play-state: paused;
     }
   </style>
 </head>
