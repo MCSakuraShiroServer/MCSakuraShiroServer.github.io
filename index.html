@@ -1,26 +1,44 @@
 <html lang="zh">
 
-<head profile="http://www.w3.org/2005/10/profile">
-  <meta charset="utf-8"/>
-  <meta name="description" content="🌸櫻之城🌸遊戲實況伺服器"/>
-  <link href="icon.jpg" rel="icon" type="image/jpeg" sizes="64x64"/>
-  <link href="stylesheets/animations.css" rel="stylesheet"/>
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="🌸櫻之城🌸遊戲實況伺服器" />
+  <link href="resources/icon.jpg" rel="icon" type="image/jpeg" sizes="64x64" />
+  <link href="stylesheets/animations.css" rel="stylesheet" />
   <title>🌸櫻之城🌸遊戲實況伺服器</title>
-</head>
+  <style title="builtin styles">
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 0 0 0;
+      font-family: sans-serif;
+      background-image: url(resources/bg.png);
+    }
 
-<body style="font-family: sans-serif;background-color: white;">
-  <style>
     .logo_container {
       display: flex;
-      height: 16vw;
-      max-height: 256;
-      border-bottom: 1px solid black;
-      flex-wrap: nowrap;
-      max-lines: 1;
+      background-color: transparent;
       pointer-events: none;
+      user-select: none;
+      margin: 0 auto;
+      align-self: center;
+    }
+
+    .logo_container_inner {
+      background-color: #FFFFFFAA;
+      display: table;
+      margin: 0;
+      flex-wrap: nowrap;
+      position: relative;
+      width: auto;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .logo_image {
+      display: table-cell;
+      vertical-align: middle;
       width: 16vw;
       max-width: 256;
       margin: auto 0 auto auto;
@@ -28,7 +46,9 @@
     }
 
     .logo_text {
-      color: dimgray;
+      display: table-cell;
+      vertical-align: middle;
+      color: gray;
       font-size: 4vw;
       margin: auto auto auto 0;
       animation: fadeIn 1s 350ms backwards;
@@ -36,11 +56,16 @@
       white-space: nowrap;
     }
   </style>
+</head>
+
+<body>
   <div class="logo_container">
-    <img src="logo.jpg" class="logo_image">
-    <span class="logo_text">
-      🌸櫻之城🌸遊戲實況伺服器
-    </span>
+    <div class="logo_container_inner">
+      <img src="resources/logo.jpg" class="logo_image">
+      <span class="logo_text">
+        🌸櫻之城🌸遊戲實況伺服器&ThinSpace;
+      </span>
+    </div>
   </div>
 </body>
 
